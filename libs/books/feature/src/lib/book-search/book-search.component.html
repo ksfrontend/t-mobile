@@ -33,11 +33,19 @@
           <div>
             <button
               mat-flat-button
-              color="primary"
+              color="primary" data-testing="add-book"
               (click)="addBookToReadingList(b)"
-              [disabled]="b.isAdded"
+              *ngIf="!b.isAdded"
             >
               Want to Read
+            </button>
+            <button
+              mat-flat-button
+              color="warn"
+              (click)="removeBookToReadingList(b)"
+              *ngIf="b.isAdded"
+            >
+              Remove from Reading List
             </button>
           </div>
         </div>
