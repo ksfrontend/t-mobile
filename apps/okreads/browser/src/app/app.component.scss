@@ -32,6 +32,10 @@ h1 {
   }
 }
 
+.contrast-fixed {
+  background-color: $pink-very-dark;
+}
+
 main {
   padding: $spacing-xs $spacing-xxs;
   min-width: 300px;
@@ -54,6 +58,7 @@ main {
   }
 
   button {
+    background-color: $gray30;
     position: absolute;
     top: $spacing-xxs;
     right: $spacing-xxs;
